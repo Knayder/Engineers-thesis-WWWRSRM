@@ -1,5 +1,7 @@
 package visualization;
 
+import window.Window;
+
 import graph.OSM_Graph;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -17,7 +19,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) {
-        OSM_Graph osm_graph = OSM_Parser.CreateGraph("src\\main\\resources\\osm\\cracow.pbf");
+        /*OSM_Graph osm_graph = OSM_Parser.CreateGraph("src\\main\\resources\\osm\\cracow.pbf");
 
         MapPane mapPane = new MapPane(osm_graph);
 //        mapPane.drawNodes();
@@ -25,6 +27,12 @@ public class App extends Application {
 
         Scene scene = new Scene(mapPane);
         stage.setScene(scene);
+        stage.show();
+        */
+
+        Window window = new Window();
+
+        stage.setScene(window.getScene());
         stage.show();
     }
 }
