@@ -5,4 +5,6 @@ public class Style {
     public static double windowHeight = 720;
 
     public static double menuWidth = 350;
+
+    public static double maxFps = 25;
 }

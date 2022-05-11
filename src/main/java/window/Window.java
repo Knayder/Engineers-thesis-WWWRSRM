@@ -3,7 +3,6 @@ package window;
 import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import window.menu.Menu;
-import window.Style;
 import window.map.Map;
 
 public class Window  {
